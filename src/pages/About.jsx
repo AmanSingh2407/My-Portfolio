@@ -1,5 +1,5 @@
 import SectionWrapper from '../components/SectionWrapper'
-import profile from '../../AmanSinghImg.jpg'
+import profile from '../../AmanSinghImg.jpeg'
 
 export default function About() {
   return (

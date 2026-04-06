@@ -8,6 +8,7 @@ import About from './pages/About'
 import Skills from './pages/Skills'
 import WorkExperience from './pages/WorkExperience'
 import Projects from './pages/Projects'
+import Certificates from './pages/Certificates'
 import Contact from './pages/Contact'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="skills" element={<Skills />} />
           <Route path="work" element={<WorkExperience />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="certificates" element={<Certificates />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>

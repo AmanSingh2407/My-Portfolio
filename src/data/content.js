@@ -4,6 +4,7 @@ export const navLinks = [
   { name: 'Skills', path: '/skills' },
   { name: 'Work', path: '/work' },
   { name: 'Projects', path: '/projects' },
+  { name: 'Certificates', path: '/certificates' },
   { name: 'Contact', path: '/contact' }
 ]
 
@@ -90,4 +91,172 @@ export const projects = [
 export const socialLinks = [
   { name: 'LinkedIn', href: 'https://linkedin.com/in/amansingh-b0ab63273', icon: 'linkedin' },
   { name: 'GitHub', href: 'https://github.com/AmanSingh2407', icon: 'github' }
+]
+
+export const certificates = [
+  {
+    title: 'Innovation, Design & Entrepreneurship (IDE) Bootcamp – Phase I',
+    issuer: 'GITAM University, Visakhapatnam (AICTE & MoE)',
+    date: 'Sept 2024',
+    image: '/certificates/ide_phase1.jpg',
+    description: [
+      'Participated in a national-level bootcamp focused on innovation, design thinking, and entrepreneurship.',
+      'Learned how to identify real-world problems and develop creative, user-centric solutions.',
+      'Gained exposure to startup ideation, teamwork, and problem-solving frameworks.'
+    ]
+  },
+  {
+    title: 'Google Cloud Agentic AI Day',
+    issuer: 'Google Cloud',
+    date: '2025',
+    image: '/certificates/agentic_ai.jpg',
+    description: [
+      'Participated in an event focused on next-generation AI agents and intelligent systems.',
+      'Explored how AI can be used to solve real-world problems through automation and smart decision-making.',
+      'Gained insights into modern AI trends, tools, and applications.'
+    ]
+  },
+  {
+    title: 'Bharatiya Antariksh Hackathon 2025',
+    issuer: 'ISRO',
+    date: '2025',
+    image: '/certificates/isro_hackathon.jpg',
+    description: [
+      'Submitted innovative ideas addressing real-world challenges in space technology.',
+      'Demonstrated strong skills in analytical thinking, creativity, and problem-solving.',
+      'Contributed towards solutions aligned with India’s space innovation initiatives.'
+    ]
+  },
+  {
+    title: 'GDG Solution Challenge',
+    issuer: 'Google Developer Groups',
+    date: '2025',
+    image: '/certificates/gdg_solution.jpg',
+    description: [
+      'Recognized for contributing innovative ideas in a global developer challenge.',
+      'Focused on solving real-world problems using technology and AI solutions.',
+      'Strengthened skills in collaboration, innovation, and scalable system thinking.'
+    ]
+  },
+  {
+    title: 'WEN Bootcamp 3.0',
+    issuer: 'Wadhwani Foundation',
+    date: 'October 2025',
+    image: '/certificates/wen_bootcamp.png',
+    description: [
+      'Successfully completed an intensive bootcamp focused on entrepreneurship and innovation.',
+      'Gained practical knowledge in idea generation, prototyping, business modeling, and financial planning.',
+      'Strengthened ability to transform ideas into scalable real-world solutions.'
+    ]
+  },
+  {
+    title: 'The Complete Android Course – Java & Kotlin',
+    issuer: 'Udemy',
+    date: 'February 2026',
+    image: '/certificates/udemy_android.png',
+    description: [
+      'Completed a comprehensive 65+ hours course on Android development.',
+      'Learned Java, Kotlin, UI design, and mobile app architecture.',
+      'Built a strong foundation in developing real-world Android applications.'
+    ]
+  },
+  {
+    title: 'Software Engineering Job Simulation',
+    issuer: 'Wells Fargo (Forage)',
+    date: 'November 2025',
+    image: '/certificates/wells_fargo.png',
+    description: [
+      'Completed real-world engineering tasks including data modeling and implementation.',
+      'Gained exposure to industry-level development workflows and problem-solving approaches.',
+      'Developed understanding of practical software engineering in a corporate environment.'
+    ]
+  },
+  {
+    title: 'Solutions Architecture Job Simulation',
+    issuer: 'AWS (Forage)',
+    date: 'November 2025',
+    image: '/certificates/aws.png',
+    description: [
+      'Designed scalable and efficient cloud-based architecture solutions.',
+      'Learned key concepts of system design, cloud infrastructure, and deployment strategies.',
+      'Strengthened skills in building reliable and high-performance systems.'
+    ]
+  },
+  {
+    title: 'Ultimate Placement Quiz',
+    issuer: 'Engiverse',
+    date: '2025',
+    image: '/certificates/engiverse.png',
+    description: [
+      'Participated in a competitive aptitude and technical assessment.',
+      'Demonstrated strong skills in logical reasoning, problem-solving, and core concepts.',
+      'Improved readiness for placement and technical interviews.'
+    ]
+  },
+  {
+    title: 'Certificate of Appreciation – B-Plan Competition',
+    issuer: 'E-Summit’25, DTU',
+    date: 'January 31, 2025',
+    image: '/certificates/bplan_appreciation.jpg',
+    description: [
+      'Recognized for participation in a national-level entrepreneurship competition.',
+      'Showcased innovative thinking and business strategy skills.',
+      'Demonstrated strong entrepreneurial mindset and problem-solving ability.'
+    ]
+  },
+  {
+    title: 'B-Plan Competition – E-Summit’25',
+    issuer: 'Delhi Technological University (DTU), New Delhi',
+    date: '2025',
+    image: '/certificates/bplan_participation.png',
+    description: [
+      'Participated in a national-level entrepreneurship competition.',
+      'Presented innovative business ideas and demonstrated strategic thinking and startup mindset.',
+      'Gained exposure to real-world business challenges and pitching techniques.'
+    ]
+  },
+  {
+    title: 'Hackatron – Infosav’25',
+    issuer: 'ABV-Indian Institute of Information Technology & Management',
+    date: '2025',
+    image: '/certificates/hackatron.jpg',
+    description: [
+      'Participated in a competitive hackathon environment, working on solving real-world technical problems.',
+      'Collaborated with peers under time constraints to design and implement innovative solutions.',
+      'Enhanced skills in problem-solving, coding, and teamwork.'
+    ]
+  },
+  {
+    title: 'L’Oréal Sustainability Challenge',
+    issuer: 'L’Oréal',
+    date: '2025',
+    image: '/certificates/loreal.jpg',
+    description: [
+      'Participated in an international-level sustainability-focused challenge.',
+      'Successfully completed the online aptitude assessment, showcasing analytical and problem-solving abilities.',
+      'Explored solutions related to environmental impact and sustainable innovation.'
+    ]
+  },
+  {
+    title: 'Google Developer Groups (GDG) On Campus – Secretary',
+    issuer: 'Google Developer Groups',
+    date: '2024–2025',
+    image: '/certificates/gdg.jpg',
+    description: [
+      'Served as a core team member (Secretary), contributing to the developer community.',
+      'Organized and managed technical events, workshops, and sessions.',
+      'Demonstrated strong leadership, communication, and team coordination skills.'
+    ]
+  },
+  {
+    title: 'IDE Bootcamp – Phase II',
+    issuer: 'AICTE & MoE (Geetanjali Institute of Technical Studies)',
+    date: '2025',
+    image: '/certificates/ide.jpg',
+    description: [
+      'Participated in a national-level bootcamp focused on innovation, design thinking, and entrepreneurship.',
+      'Learned key concepts of idea validation, prototyping, and business modeling.',
+      'Developed a strong foundation in startup development and real-world problem solving.'
+    ]
+  }
 ]
