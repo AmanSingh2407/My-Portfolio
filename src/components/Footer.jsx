@@ -15,12 +15,12 @@ const icons = {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-800/60 bg-slate-950/70">
+    <footer className="border-t border-slate-200/60 bg-white/70 dark:border-slate-800/60 dark:bg-slate-950/70">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-6 text-sm text-slate-500 md:flex-row">
         <p>© {new Date().getFullYear()} Aman Singh. All rights reserved.</p>
         <div className="flex items-center gap-4">
           {socialLinks.map((link) => (
-            <a key={link.name} href={link.href} target="_blank" rel="noreferrer" className="text-slate-400 transition hover:text-accent">
+            <a key={link.name} href={link.href} target="_blank" rel="noreferrer" className="text-slate-500 transition hover:text-accent dark:text-slate-400 dark:hover:text-accent">
               <span className="sr-only">{link.name}</span>
               {icons[link.icon]}
             </a>

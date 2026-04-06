@@ -11,7 +11,7 @@ export default function SectionWrapper({ title, subtitle, children }) {
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6 }} variants={variants} className="space-y-8">
         <header>
           <p className="text-sm uppercase tracking-[0.4em] text-accent">{subtitle}</p>
-          <h2 className="mt-4 text-3xl font-semibold text-slate-100 md:text-4xl">{title}</h2>
+          <h2 className="mt-4 text-3xl font-semibold text-slate-900 dark:text-slate-100 md:text-4xl">{title}</h2>
         </header>
         {children}
       </motion.div>

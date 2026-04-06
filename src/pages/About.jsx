@@ -5,8 +5,8 @@ export default function About() {
   return (
     <SectionWrapper title="About Aman" subtitle="Story">
       <div className="grid gap-12 lg:grid-cols-[320px_1fr] lg:items-center">
-        <div className="relative overflow-hidden rounded-3xl border border-slate-800/60 bg-slate-900/40">
-          <div className="absolute -inset-1 bg-gradient-to-br from-accent/40 via-transparent to-slate-950 opacity-40" />
+        <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/50 dark:border-slate-800/60 dark:bg-slate-900/40">
+          <div className="absolute -inset-1 bg-gradient-to-br from-accent/40 via-transparent to-white opacity-40 dark:to-slate-950" />
           <img
             src={profile}
             alt="Aman Singh"
@@ -15,21 +15,24 @@ export default function About() {
             loading="lazy"
           />
         </div>
-        <div className="space-y-6 text-base leading-relaxed text-slate-300">
+        <div className="space-y-6 text-base leading-relaxed text-slate-600 dark:text-slate-300">
           <p>
-             I'm a passionate Computer Science Engineer skilled in Java, cross-platform app development, and AI integration. With experience as an SDE intern at BluOryn Technologies, he focuses on building innovative and scalable solutions that combine technology, creativity, and real-world impact.
-             </p>
+            I am a driven software developer with a strong foundation in full-stack development and mobile application development, currently pursuing my B.Tech in Computer Science. I have hands-on experience building AI-powered platforms, real-time applications, and scalable systems using modern technologies like React, Flutter, Java, and Node.js.
+          </p>
           <p>
-            From building scalable apps to designing intelligent systems, I approach every project with curiosity, creativity, and precision. I thrive in collaborative environments where innovation meets purpose and ideas turn into real-world impact.
+            My core interest lies in developing impactful products that solve real-world problems, especially at the intersection of AI and user-centric design. I continuously strive to improve my problem-solving skills through Data Structures & Algorithms and aim to build high-performance systems aligned with industry standards.
+          </p>
+          <p>
+            I am actively working towards becoming a top-tier software engineer and contributing to innovative, large-scale tech solutions.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-6">
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 dark:border-slate-800/60 dark:bg-slate-900/40">
               <p className="text-xs uppercase tracking-widest text-slate-500">Current Focus</p>
-              <p className="mt-2 text-lg font-semibold text-slate-100">Java, Flutter, and AI-driven development</p>
+              <p className="mt-2 text-lg font-semibold text-slate-900 dark:text-slate-100">Java, Flutter, and AI-driven development</p>
             </div>
-            <div className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-6">
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 dark:border-slate-800/60 dark:bg-slate-900/40">
               <p className="text-xs uppercase tracking-widest text-slate-500">Availability</p>
-              <p className="mt-2 text-lg font-semibold text-slate-100">Open for freelance</p>
+              <p className="mt-2 text-lg font-semibold text-slate-900 dark:text-slate-100">Open for freelance</p>
             </div>
           </div>
         </div>

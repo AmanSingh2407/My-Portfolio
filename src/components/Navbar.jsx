@@ -14,7 +14,7 @@ export default function Navbar() {
         to={link.path}
         onClick={handleClick}
         className={({ isActive }) =>
-          `relative rounded-full px-4 py-2 text-sm font-medium transition ${isActive ? 'text-accent' : 'text-slate-400 hover:text-slate-100'}`
+          `relative rounded-full px-4 py-2 text-sm font-medium transition ${isActive ? 'text-accent' : 'text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100'}`
         }
       >
         {link.name}
@@ -23,9 +23,9 @@ export default function Navbar() {
   )
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-slate-800/60 bg-slate-950/70 backdrop-blur">
+    <nav className="sticky top-0 z-50 w-full border-b border-slate-200/60 bg-white/70 dark:border-slate-800/60 dark:bg-slate-950/70 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <NavLink to="/" className="flex items-center gap-3 text-lg font-semibold tracking-tight text-slate-100">
+        <NavLink to="/" className="flex items-center gap-3 text-lg font-semibold tracking-tight text-slate-900 dark:text-slate-100">
           <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-accent/20 text-accent">AS</span>
           <span>Aman Singh</span>
         </NavLink>
@@ -37,7 +37,7 @@ export default function Navbar() {
           <ThemeToggle />
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-700/40 text-slate-200"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 text-slate-600 dark:border-slate-700/40 dark:text-slate-200"
             onClick={() => setOpen(!open)}
             aria-label="Toggle navigation"
           >
@@ -59,7 +59,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="border-t border-slate-800/60 bg-slate-950/90 lg:hidden"
+            className="border-t border-slate-200/60 bg-white/90 dark:border-slate-800/60 dark:bg-slate-950/90 lg:hidden"
           >
             <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-4">
               {renderLinks(() => setOpen(false))}

@@ -35,7 +35,7 @@ export default function Contact() {
         <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="space-y-2">
-              <label htmlFor="name" className="text-sm font-medium text-slate-200">Name</label>
+              <label htmlFor="name" className="text-sm font-medium text-slate-700 dark:text-slate-200">Name</label>
               <input
                 id="name"
                 name="name"
@@ -43,11 +43,11 @@ export default function Contact() {
                 onChange={handleChange}
                 value={formData.name}
                 placeholder="Enter your name"
-                className="w-full rounded-xl border border-slate-700/60 bg-slate-900/60 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:border-accent focus:outline-none"
+                className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-500 focus:border-accent focus:outline-none dark:border-slate-700/60 dark:bg-slate-900/60 dark:text-slate-100"
               />
             </div>
             <div className="space-y-2">
-              <label htmlFor="email" className="text-sm font-medium text-slate-200">Email</label>
+              <label htmlFor="email" className="text-sm font-medium text-slate-700 dark:text-slate-200">Email</label>
               <input
                 id="email"
                 name="email"
@@ -55,12 +55,12 @@ export default function Contact() {
                 onChange={handleChange}
                 value={formData.email}
                 placeholder="you@email.com"
-                className="w-full rounded-xl border border-slate-700/60 bg-slate-900/60 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:border-accent focus:outline-none"
+                className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-500 focus:border-accent focus:outline-none dark:border-slate-700/60 dark:bg-slate-900/60 dark:text-slate-100"
               />
             </div>
           </div>
           <div className="space-y-2">
-            <label htmlFor="message" className="text-sm font-medium text-slate-200">Message</label>
+            <label htmlFor="message" className="text-sm font-medium text-slate-700 dark:text-slate-200">Message</label>
             <textarea
               id="message"
               name="message"
@@ -68,7 +68,7 @@ export default function Contact() {
               onChange={handleChange}
               value={formData.message}
               placeholder="Tell me about your project"
-              className="w-full rounded-xl border border-slate-700/60 bg-slate-900/60 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:border-accent focus:outline-none"
+              className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-500 focus:border-accent focus:outline-none dark:border-slate-700/60 dark:bg-slate-900/60 dark:text-slate-100"
             />
           </div>
           <button
@@ -81,19 +81,19 @@ export default function Contact() {
           {status === 'success' && <p className="text-sm text-emerald-400">Message sent! I’ll be in touch.</p>}
           {status === 'error' && <p className="text-sm text-rose-400">Something went wrong. Please try again.</p>}
         </form>
-        <div className="space-y-6 rounded-2xl border border-slate-800/60 bg-slate-900/40 p-8">
+        <div className="space-y-6 rounded-2xl border border-slate-200 bg-slate-50 p-8 dark:border-slate-800/60 dark:bg-slate-900/40">
           <div>
-            <h3 className="text-lg font-semibold text-slate-100">Let’s build something</h3>
-            <p className="mt-3 text-sm leading-relaxed text-slate-300">
+            <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Let’s build something</h3>
+            <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
               I’m available for collaborations, contract work, and full-time opportunities. Reach out with details and I’ll respond within two business days.
             </p>
           </div>
-          <div className="space-y-3 text-sm text-slate-300">
-            <p className="font-medium text-slate-100">Prefer other channels?</p>
+          <div className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+            <p className="font-medium text-slate-900 dark:text-slate-100">Prefer other channels?</p>
             <ul className="flex flex-wrap items-center gap-3">
               {socialLinks.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-slate-800/80 px-4 py-2 text-sm text-slate-200 transition hover:border-accent hover:text-accent">
+                  <a href={link.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-sm text-slate-700 transition hover:border-accent hover:text-accent dark:border-slate-800/80 dark:text-slate-200">
                     {link.name}
                   </a>
                 </li>
